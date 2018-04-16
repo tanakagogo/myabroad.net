@@ -1,0 +1,502 @@
+@charset "UTF-8";
+
+
+/*共通設定*/
+body {
+	font-family:'Century Gothic','メイリオ','MS明朝';
+	color: #808080;
+	margin: 0;
+}
+.clearfix:after{
+	display: block;
+	content:"";
+	line-height: 0;
+	clear: both;
+}
+.inner {
+	width: 960px;
+	height:auto;
+	/*text-align: center;*/
+	margin: 0px auto 0px;
+}
+div#header{
+	height: 60px;
+}
+div#header div.inner a{
+	display: block;
+	height: 60px;
+	width: 500px;
+	margin: 0;
+	float: left;
+}
+ul{
+	height: auto;
+	padding: 0;
+	list-style: none;
+}
+#regi_time {
+	font-size: 1em;
+}
+h2 {
+	font-size: 30px;
+	color:#9bcec5;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: #808080
+}
+a:hover {
+	opacity: 0.5;
+}
+
+/*バージョン情報*/
+#version{
+	width: 200px;
+	height: 60px;
+	margin: 0;
+	color:white;
+	background-color: #555;
+	float: right;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	letter-spacing: 3px;
+	line-height: 45px
+}
+#version span{
+	font-size: 50px;
+}
+
+
+/*nav設定*/
+/*nav設定*/
+#nav ul {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	width: 960px;
+}
+#nav li {
+	width: 500px;
+}
+#nav{
+	border-bottom: dashed 1px #808080;
+	border-top: dashed 1px #808080;
+	min-width: 960px;
+	background-color: rgba(255, 255, 255, 0.85);
+	z-index: 100;
+}
+
+#nav ul li{
+	padding-left: 55px;
+}
+#nav ul li:first-child{
+	padding-left: 0px;
+}
+#nav ul li:nth-child(2){
+	padding-left: 38px;
+}
+#nav ul li:last-child{
+	padding-left: 65px;
+}
+#nav ul li a{
+	text-align: left;
+	display: block;
+	padding-left: 97px;
+	background-repeat: no-repeat;
+	height: 40px;
+	line-height: 41px;
+	font-size: 23px;
+	background-position: 40px 3px;
+}
+#nav ul li:first-child a{
+	padding-left: 55px;
+}
+#nav ul li.navli01 a{
+	background-image: url('../img/icon_03.png');
+	background-position: 0px 3px;
+}
+.navli02 a{
+	background-image: url('../img/icon_02.png');
+}
+.navli03 a{
+	background-image: url('../img/icon_01.png');
+}
+
+
+/*トップボタン*/
+
+div#to_top a{
+	display: block;
+	width: 75px;
+	height: 75px;
+	position: fixed;
+	bottom: 25px;
+	right: calc(50% - 38px);
+	background-color: rgba(0, 0, 0, 1);
+	text-align: center;
+	border-radius: 50%;
+	color: white;
+	font-size: 10px;
+	line-height: 100px;
+	color: white;
+	opacity: 0.2;
+	transition-property: opacity;
+	transition-duration: 0.25s;
+	transition-timing-function: cubic-bezier(0.15, 0.49, 0.4, 1);
+	z-index: 1000;
+}
+div#to_top a:hover{
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0.8;
+}
+#arrow_to_top{
+	position: absolute;
+	top:25px;
+	left:24px;
+	width: 25px;
+	height: 25px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px 0px 0px 2px;
+	transform: rotate(45deg);
+	text-indent: -9999px;
+	z-index: 100;
+}
+
+
+/*container設定*/
+
+/*___メイン画像___*/
+.main_pic{
+	text-align: center;
+	padding: 20px;
+	background-color: #e0ffff;
+	margin-bottom: 30px;
+}
+.main_pic a:hover {
+	opacity: 1.0;
+}
+
+
+/*ナビ*/
+.nav2{
+	height: 75px;
+	margin-bottom: 30px;
+}
+.nav2 ul{
+	width: 915px;
+	height: auto;
+	margin: 0 auto;
+}
+.nav2 ul li{
+	width: 275px;
+	height: 75px;
+	background-color:#9bcec5;
+	background-image: url('../img/kuchibashi.png');
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	margin: 0px 15px;
+	padding: 0px 0px 0px 25px;
+	font-size: 20px;
+	line-height: 75px;
+	text-align: center;
+	float:left;
+	box-sizing: border-box;
+}
+.nav2 ul li a{
+	color: white;
+}
+
+
+/*サイト説明 3つのボタン*/
+#whattrp{
+	padding: 0px 0px 0px 30px;
+}
+#whatma{
+	padding: 0px 0px 0px 30px;
+	box-sizing: border-box;
+}
+
+/*サイト説明　詳細*/
+.descriptions{
+	width: 960px;
+	height: auto;
+	margin-bottom: 30px;
+	border-top: dashed 2px #808080;
+}
+.descriptions p.description_body{
+	font-size: 20px;
+	color: #808080;
+}
+
+/*picquestって何？*/
+body #container div #content div.descriptions div.example-box{
+	width: 960px;
+	height: auto;
+	border: solid 1px #808080;
+	margin-bottom: 45px;
+	padding: 30px;
+	box-shadow: 10px 10px #808080;
+	box-sizing: border-box;
+}
+#description2 div div.exampleA{
+	width: 450px;
+	height: 300px;
+	margin: 0px;
+	float: left;
+}
+.example-box .exampleA h3{
+	float: left;
+}
+.example-box .exampleA dl dt{
+	border-bottom: 1px solid;
+	text-align: initial;
+	text-indent: 1em;
+}
+.example-box .exampleA dl dd{
+	margin: 10px 0px 0px 10px;
+	text-align: initial;
+	font-family: "ＭＳ 明朝",serif;
+	line-height: 23px;
+}
+.example-box .exampleA p{
+	margin-top: 160px;
+}
+.example-box .exampleA h3{
+	width: 450px;
+	height: 75px;
+	background-color:#9bcec5;
+	background-image: url('../img/kuchibashi.png');
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	margin: 0px 0px;
+	padding: 0px 0px 0px 25px;
+	color: white;
+	font-size: 20px;
+	line-height: 75px;
+	text-align: center;
+	float:left;
+	box-sizing: border-box;
+}
+.exampleB{
+	width: 300px;
+	height: auto;
+	border: solid 1px #ccc;
+	margin: 10px 10px 10px 100px;
+	padding: 15px;
+	background-color: white;
+	float: right;
+}
+.exampleB img{
+	width: 300px;
+	margin: 0 auto;
+}
+div.example-box div.exampleB p{
+	margin: 10px 0px 0px 0px;
+}
+div.ex-example p{
+	margin: 0 auto;
+	text-align: center;
+}
+div.ex-example h3{
+	font-family: 'Century Gothic';
+	font-size: 30px;
+	font-weight: 100;
+	text-align: center;
+}
+div.ex-example h4{
+	margin-bottom: 5px;
+	font-family: 'メイリオ';
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+}
+div.ex-example p#btn1 a{
+	display: block;
+	width: 600px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 23px 30px 30px 175px;
+	background-image: url('../img/icon_03w.png');
+	background-repeat: no-repeat;
+	background-size: 75px;
+	background-position: 60px 20px;
+	background-color: #9BCEC5;
+	color: white;
+	font-family: 'メイリオ';
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-align: left;
+	border-radius: 100px;
+	box-sizing: border-box;
+}
+div.ex-example p#btn2 a{
+	display: block;
+	width: 600px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 23px 30px 30px 175px;
+	background-image: url('../img/icon_02w.png');
+	background-repeat: no-repeat;
+	background-size: 75px;
+	background-position: 60px 20px;
+	background-color: #9BCEC5;
+	color: white;
+	font-family: 'メイリオ';
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-align: left;
+	border-radius: 100px;
+	box-sizing: border-box;
+}
+/*div.ex-example p#btn1 a{
+	background-image: url('../img/icon_03w.png');
+	background-repeat: no-repeat;
+}
+div.ex-example p#btn2 a{
+	background-image: url('../img/icon_02w.png');
+	background-repeat: no-repeat;
+}*/
+#description3{
+	clear: both;
+}
+#description3 div div.exampleA{
+	width: 450px;
+	height: 300px;
+	margin: 0px;
+	float: left;
+}
+.ex-example dl{
+	width: 600px;
+	margin: auto;
+}
+.ex-example dd{
+	margin: 0;
+	color: #9bcec5;
+	font-size: 45px;
+}
+
+/*Trippiiってなに？*/
+.exampleB2{
+	width: 300px;
+	height: auto;
+	/*border: solid 1px #ccc;*/
+	margin: 0px 0px 0px 100px;
+	padding: 15px;
+	background-color: white;
+	float: right;
+}
+.exampleB2 img#trippii_image{
+	margin: 0 auto;
+	width: 200px;
+	display: block;
+}
+.exampleB2 p{
+margin: 10px 0px 0px;
+}
+/*注意*/
+div#caution {
+	margin-top: 150px;
+	background-color: #f2f2f2;
+	text-align: center;
+}
+#caution dd {
+	margin: 0;
+}
+#caution dl {
+	padding: 25px;
+	margin: auto;
+}
+
+
+/*フッター*/
+#footer ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 25px;
+	margin: 0;
+}
+#footer ul li {
+	width: 250px;
+	text-align: center;
+	border-right: 1px solid;
+
+}
+div#footer {
+	background-color: #ccc;
+	min-width: 960px;
+}
+#footer .inner {
+	color: white;
+}
+#footer p {
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+	font-size: 14px;
+}
+
+/*ナビ固定*/
+.is-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+}
+
+/*モーダルウィンドウ用*/
+dl#thxforsend{
+	background-color: #f2f2f2;
+	width: 800px;
+	padding: 30px;
+	margin: 35px auto;
+}
+#thxforsend dt{
+	border-bottom: solid 1px #808080;
+	text-indent: 1em;
+}
+#thxforsend dd{
+	margin: 20px 0 0 0;
+}
+#lean_overlay{
+	position: fixed; z-index:100;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+#div787{
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+	display: none;
+	padding: 30px;
+	width: 780px;
+}
+.modal_close{
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	display: block;
+	width: 14px;
+	height: 14px;
+/*  background: url(../img/modal_close.png);*/
+	z-index: 2;
+}
+#comment{
+	width: 600px;
+	height: 400px;
+	background-color: white;
+	padding: 25px;
+	border: solid 5px #9bcec5;
+	border-radius: 25px;
+}
